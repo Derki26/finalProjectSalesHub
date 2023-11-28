@@ -1,5 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
-import logos from "/salesForceHubSmall.svg";
+import logos from "salesForceHubSmall.svg";
 import "../CSS/header.css";
 
 const RootLayout = () => {
