@@ -8,22 +8,22 @@ const RootLayout = () => {
       <div>
         <nav>
           <div className="ml-2 items-center ">
-            <img src={logos} alt="logo" className="logo-nav" style={{ marginRight: "100px" }} />
-            <Link to="/" className="text-black text-base mr-5" >
+            <img src={logos} alt="logo" className="logo-nav" style={{ marginRight: "100px"}} />
+            <Link to="/" className="text-black text-base mr-5"  style={{ fontSize: "2rem" }}>
               Home
             </Link>
-            <Link to="/about" className="text-black ml-4 text-base mr-5" >
+            <Link to="/about" className="text-black ml-4 text-base mr-5" style={{ fontSize: "2rem" }} >
               About
             </Link>
-            <Link to="/showcase" className="text-black ml-4 text-base mr-2" >
+            <Link to="/showcase" className="text-black ml-4 text-base mr-2" style={{ fontSize: "2rem" }}>
               Showcase
             </Link>
 
-            <Link to="/contact" className="text-black ml-4 text-base flex items-center  mr-5">
+            <Link to="/contact" className="text-black ml-4 text-base flex items-center  mr-5" style={{ fontSize: "2rem" }}>
                  Contact Us
             </Link>
 
-            <Link to="/users" className="text-black ml-4 text-base mr-5" >
+            <Link to="/users" className="text-black ml-4 text-base mr-5" style={{ fontSize: "2rem" }}>
               Users
             </Link>
           </div>
