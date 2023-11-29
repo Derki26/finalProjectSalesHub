@@ -116,3 +116,52 @@ left: -0.75rem;
   width: 150px;
   height:150px;
 }
+
+.containerX {
+  width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+}
+
+.hero-heading-home{
+color :rgb(3, 45, 96);
+font-family: "Avant Garde", sans-serif;
+font-size: 48px;
+font-weight: 600;
+height:109.438px;
+letter-spacing: -0.864px;
+line-height :54.72px;
+margin-block-end: 24px;
+margin-block-start: 0px;
+margin-bottom: 24px;
+margin-inline-end: 0px;
+margin-inline-start: 0px;
+margin-top: 0px;
+width: 800px;
+}
+
+.content{
+  background-size: 60%;
+  background-position: right -80px top 0;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  position: relative;
+  color: #032D60;
+  background-color: #fff;
+  overflow: hidden;
+}
+.hero-home {
+  padding: 10rem 0 5rem;
+}
+
+
+.hero-home
+.content .text-content{
+  order: 0;
+}

@@ -11,7 +11,12 @@ export default {
         footer: "#7da7f5",
       },
     },
+    daisyui: {
+      themes: ["light", "dark", "cupcake"],
+    },
   },
-  plugins: [],
+  plugins: [
+    require("daisyui")
+  ],
 }
 
