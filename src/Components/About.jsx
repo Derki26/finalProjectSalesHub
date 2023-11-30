@@ -1,13 +1,13 @@
 import React from "react";
-import Common from "./Common";
-import web from "../src/images/img1.svg";
+import {Common} from "./Common";
 
-function About() {
+
+const About = () => {
   return (
     <>
       <Common
         name="Welcome to About page"
-        imgSrc={web}
+       
         visit="/contact"
         btnName="Contact Now"
       />
@@ -15,4 +15,4 @@ function About() {
   );
 }
 
-export default About;
+export { About };

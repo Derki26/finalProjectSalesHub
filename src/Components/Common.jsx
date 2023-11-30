@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Common(props) {
+const Common = (props) => {
   return (
     <>
       <section id="header" className="d-flex align-items-center">
@@ -12,7 +12,7 @@ function Common(props) {
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <h1>
                     {props.name}
-                    <strong className="brand-name"> hghghg</strong>
+                    <strong className="brand-name"> sdsdsdsds</strong>
                   </h1>
                   <h2 className="my-3">I am a Full Stack Web Developer.</h2>
                   <div className="mt-3">
@@ -37,4 +37,4 @@ function Common(props) {
   );
 }
 
-export default Common;
+export { Common};

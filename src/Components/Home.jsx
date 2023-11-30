@@ -4,8 +4,10 @@ import { Footer } from "../Components/Footer";
 import { Hero } from "../Components/Hero";
 import { Content } from "../Components/Content";
 
+
 const Home = () => {
   return (
+    
     <div className="container-fluid mx-auto flex items-center justify-between">
       <div>
         <nav>
@@ -31,11 +33,11 @@ const Home = () => {
               About
             </Link>
             <Link
-              to="/courses"
+              to="/service"
               className="text-black ml-4 text-base mr-2"
               style={{ fontSize: "1.5rem" }}
             >
-              Courses
+              Services
             </Link>
 
             <Link
@@ -59,17 +61,14 @@ const Home = () => {
       <div
         className="container-fluid grid"
         style={{ boxShadow: "0 5px 8px rgba(0, 0, 0, 0.1)", padding: "1rem" }}
-      >
+      >    
         <Outlet />
       </div>
       <div className="container-fluid mx-auto flex items-center justify-between">
+     
         <div>
-          <Hero />
-        </div>
-        <div>
-          <Content />
-        </div>
-        <div>
+          <Hero />  
+          <Content />    
           <Footer />
         </div>
       </div>
