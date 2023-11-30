@@ -11,7 +11,7 @@ const App = () => {
   return (
     <>
       
-      <Courses />
+      <Home />
       <Routes>
         <Route  path=' ' component={<Home />} />
         <Route  path='home' component={<About />} />

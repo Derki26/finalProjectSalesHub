@@ -37,7 +37,7 @@ const Home = () => {
               className="text-black ml-4 text-base mr-2"
               style={{ fontSize: "1.5rem" }}
             >
-              Services
+              Courses
             </Link>
 
             <Link
