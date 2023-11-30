@@ -2,7 +2,8 @@ import { Outlet, Link } from "react-router-dom";
 import "../CSS/header.css";
 import { Footer } from "../Components/Footer";
 import { Hero } from "../Components/Hero";
-import { Content } from "../Components/Content";
+import { Certificate } from "../Components/Certificate";
+import { Courses } from "../Components/Courses";
 
 
 const Home = () => {
@@ -33,7 +34,7 @@ const Home = () => {
               About
             </Link>
             <Link
-              to="/service"
+              to="/courses"
               className="text-black ml-4 text-base mr-2"
               style={{ fontSize: "1.5rem" }}
             >
@@ -41,11 +42,11 @@ const Home = () => {
             </Link>
 
             <Link
-              to="/contact"
+              to="/certificate"
               className="text-black ml-4 text-base flex items-center  mr-2"
               style={{ fontSize: "1.5rem" }}
             >
-              Contact Us
+              Certificate
             </Link>
 
             <Link
@@ -68,7 +69,8 @@ const Home = () => {
      
         <div>
           <Hero />  
-          <Content />    
+          <Certificate />    
+          <Courses />  
           <Footer />
         </div>
       </div>

@@ -5,6 +5,7 @@ import {Home} from "./Home";
 import {About} from "./About";
 import {Courses} from "./Courses";
 import {Contact} from "./Contact";
+import {Certificate} from "./Certificate";
 import {Footer} from "./Footer";
 
 const App = () => {
@@ -15,8 +16,9 @@ const App = () => {
       <Routes>
         <Route  path=' ' component={<Home />} />
         <Route  path='home' component={<About />} />
-        <Route  path='about' component={<Courses />} />
-        <Route  path='service' component={<Contact />} />
+        <Route  path='courses' component={<Courses />} />
+        <Route  path='Certificate' component={<Certificate />} />
+        <Route  path='Contact' component={<Contact />} />
         <Route  path='footer' component={<Footer />} />
       </Routes>
     </>

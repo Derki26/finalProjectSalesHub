@@ -1,6 +1,6 @@
 import React from "react";
 
-const Content = () => {
+const Certificate = () => {
     return (
       <div className="bg-cover bg-center" style={{backgroundImage: 'url(/test-bg.webp)'}} >
       <div className="hero-content text-center" > 
@@ -41,4 +41,4 @@ const Content = () => {
       );
     };
 
-export { Content };
+export { Certificate };

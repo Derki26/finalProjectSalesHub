@@ -12,9 +12,9 @@ const Common = (props) => {
                 <div className="col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column">
                   <h1>
                     {props.name}
-                    <strong className="brand-name"> sdsdsdsds</strong>
+                    <strong className="brand-name"> LivDer</strong>
                   </h1>
-                  <h2 className="my-3">I am a Full Stack Web Developer.</h2>
+                  <h2 className="my-3">We are a Company of Full Stack Web Developer.</h2>
                   <div className="mt-3">
                     <NavLink exact className="btn-get-started" to={props.visit}>
                       {props.btnName}
