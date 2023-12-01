@@ -1,12 +1,10 @@
 import { Outlet, Link } from "react-router-dom";
 import "../CSS/header.css";
-import { Footer } from "../Components/Footer";
-import { Hero } from "../Components/Hero";
-import { Certificate } from "../Components/Certificate";
-import { Courses } from "../Components/Courses";
 
 
-const Home = () => {
+
+
+const Navbar = () => {
   return (
     
     <div className="container-fluid mx-auto flex items-center justify-between">
@@ -68,11 +66,11 @@ const Home = () => {
       <div className="container-fluid mx-auto flex items-center justify-between">
      
       </div>
-     
+      
     </div>
     
   );
 
 };
 
-export { Home };
+export { Navbar };
