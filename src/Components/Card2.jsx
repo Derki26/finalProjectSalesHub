@@ -14,7 +14,7 @@ import { NavLink } from "react-router-dom";
           />
           <div className="card-body">
             <h5 className="card-title">{props.title}</h5>
-            <p className="card-text">
+            <p className="card-text" >
             A Java developer is a professional who specializes
             in programming using the Java programming language. 
             Java is a versatile and widely-used programming language

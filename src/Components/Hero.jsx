@@ -30,12 +30,15 @@ const Hero = () => {
               <h1 className="text-primary text-5xl font-bold">
                 Join the #1 pathway for high-growth tech careers!
               </h1>
-
-              <img
-                src="picture1.jpg"
-                className="max-w-sm rounded-lg shadow-2xl"
-              />
-              <button className="btn btn-primary">Get Started</button>
+              <div className="col-lg-6 order-1 order-lg-2 header-img">
+                  <img
+                    src="picture1.jpg"
+                    className="img-fluid animated"
+                    alt="home"
+                  />
+              </div>    
+             
+              
             </div>
             <section
               id="home"
