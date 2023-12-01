@@ -1,4 +1,6 @@
 import React from "react";
+import {Common} from "./Common";
+import web from "./img/ilustracion-colorida-programador.avif";
 
 const Certificate = () => {
     return (
@@ -28,16 +30,18 @@ const Certificate = () => {
           <div className="mb-3">
             <div className="text-center lg:text-left" >
               
-              <h1 className="text-primary text-5xl font-bold">
-                Join the #1 pathway for high-growth tech careers!
-              </h1>
               <div className="header-img">
               <img
                 src="1651585.webp"
                 className="max-w-sm rounded-lg shadow-2xl"
               />
               </div>
-              <button className="btn btn-primary">Get Started</button>
+              <Common
+                  name="Join the #1 pathway for high-growth tech careers!"
+                  imgSrc={web}
+                  visit="/contact"
+                  btnName="Contact Now"
+                />
             </div>
    
           </div>

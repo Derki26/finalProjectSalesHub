@@ -29,7 +29,7 @@ const Contact = () => {
   return (
     <>
     <div className="container" style={{ height: "100vh" }}>
-    <div  style={{ backgroundImage: "url(/jobs-foliage.webp)" }}>
+    <div  >
       <div className="my-5" >
         <h1 className="text-center">Contact We</h1>
       </div>

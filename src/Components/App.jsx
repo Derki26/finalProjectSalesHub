@@ -15,9 +15,7 @@ import {Footer} from "./Footer";
 const App = () => {
   return (
     <>
-     
-     <Navbar />
-     
+     <Navbar />     
       <Routes>
         <Route  path='/' element={<Home />} />
         <Route  path='Courses' element={<Courses />} />
