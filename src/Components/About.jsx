@@ -1,5 +1,6 @@
 import React from "react";
 import {Common} from "./Common";
+import web from "/public/hombre-certificado.avif";
 
 
 const About = () => {
@@ -7,7 +8,7 @@ const About = () => {
     <>
       <Common
         name="Welcome to About page"
-       
+        imgSrc={web}
         visit="/contact"
         btnName="Contact Now"
       />

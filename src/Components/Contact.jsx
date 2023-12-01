@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../CSS/contact.css";
 
 const Contact = () => {
   const [data, setData] = useState({
@@ -27,11 +28,13 @@ const Contact = () => {
 
   return (
     <>
-      <div className="my-5">
+    <div className="container" style={{ height: "100vh" }}>
+    <div  style={{ backgroundImage: "url(/jobs-foliage.webp)" }}>
+      <div className="my-5" >
         <h1 className="text-center">Contact We</h1>
       </div>
       <div className="container contact_div">
-        <div className="row">
+        <div className="row" >
           <div className="col-md-6 col-10 mx-auto">
             <form onSubmit={formSubmit}>
               <div className="form-group">
@@ -47,7 +50,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label>Phone Number</label>
                 <input
                   type="number"
@@ -60,7 +63,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label>Email address</label>
                 <input
                   type="email"
@@ -73,7 +76,7 @@ const Contact = () => {
                   required
                 />
               </div>
-              <div class="form-group">
+              <div className="form-group">
                 <label>Message</label>
                 <textarea
                   className="form-control"
@@ -84,13 +87,17 @@ const Contact = () => {
                   rows="4"
                 ></textarea>
               </div>
-              <button type="submit" class="btn btn-outline-primary">
+              <div>
+              <button type="submit" className="btn btn-outline-primary">
                 Submit
               </button>
+              </div>
             </form>
           </div>
         </div>
       </div>
+    </div>
+    </div>
     </>
   );
 }

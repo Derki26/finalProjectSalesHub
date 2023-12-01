@@ -16,7 +16,7 @@ const Courses = () => {
             <div className="row gy-4">
               <Card
                 imgSrc="https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png"
-                title="Web Developer"
+                title="Full Stack Web Developer"
               />
               <Card2
                 imgSrc="https://miro.medium.com/max/1140/1*EPBoypOrvhDGsJySTjs0fw.jpeg"

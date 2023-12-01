@@ -18,9 +18,9 @@ import { NavLink } from "react-router-dom";
             An "Illustrator developer" typically refers to 
             someone who specializes in developing extensions,
             scripts, or plugins for Adobe Illustrator. Adobe Illustrator 
-            is a popular vector graphics .
+            is a popular vector graphics logos, icons.
             </p>
-            <NavLink to="" className="btn btn-primary">
+            <NavLink to="/about" className="btn btn-primary">
               Go somewhere
             </NavLink>
           </div>

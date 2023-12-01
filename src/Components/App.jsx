@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes  } from "react-router-dom";
+import { Route, Routes , BrowserRouter as Router } from "react-router-dom";
 import "./App.css";
 import {Home} from "./Home";
 import {About} from "./About";
@@ -15,7 +15,7 @@ const App = () => {
       <Home />
       <Routes>
         <Route  path=' ' component={<Home />} />
-        <Route  path='home' component={<About />} />
+        <Route  path='about' component={<About />} />
         <Route  path='courses' component={<Courses />} />
         <Route  path='Certificate' component={<Certificate />} />
         <Route  path='Contact' component={<Contact />} />
@@ -24,6 +24,7 @@ const App = () => {
     </>
   );
 }
+
 
 export { App };
 
