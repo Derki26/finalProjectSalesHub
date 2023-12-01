@@ -67,12 +67,6 @@ const Home = () => {
       </div>
       <div className="container-fluid mx-auto flex items-center justify-between">
      
-        <div>
-          <Hero />  
-          <Certificate />    
-          <Courses />  
-          <Footer />
-        </div>
       </div>
     </div>
   );

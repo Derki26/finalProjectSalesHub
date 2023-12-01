@@ -1,6 +1,6 @@
 import React from "react";
 import {Common} from "./Common";
-import web from "/public/hombre-certificado.avif";
+import web from "/hombre-certificado.avif";
 
 
 const About = () => {

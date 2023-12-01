@@ -7,12 +7,19 @@ import {Courses} from "./Courses";
 import {Contact} from "./Contact";
 import {Certificate} from "./Certificate";
 import {Footer} from "./Footer";
+import {Hero} from "./Hero";
+
 
 const App = () => {
   return (
     <>
-      
+     
       <Home />
+      <Hero />
+      <Certificate />
+     
+      <About />
+      <Footer />
       <Routes>
         <Route  path=' ' component={<Home />} />
         <Route  path='about' component={<About />} />
