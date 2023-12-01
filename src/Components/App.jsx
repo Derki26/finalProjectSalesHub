@@ -17,13 +17,15 @@ const App = () => {
       <Home />
       <Hero />
       <Courses />
+      <Certificate />
       <About />
       <Footer />
       <Routes>
         <Route  path=' ' component={<Home />} />
-        <Route  path='about' component={<About />} />
+        <Route  path='Hero' component={<Hero />} />
         <Route  path='courses' component={<Courses />} />
         <Route  path='Certificate' component={<Certificate />} />
+        <Route  path='About' component={<About />} />
         <Route  path='Contact' component={<Contact />} />
         <Route  path='footer' component={<Footer />} />
       </Routes>
