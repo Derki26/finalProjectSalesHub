@@ -50,11 +50,11 @@ const Home = () => {
             </Link>
 
             <Link
-              to="/users"
+              to="/contact"
               className="text-black ml-4 text-base mr-2"
               style={{ fontSize: "1.5rem" }}
             >
-              Users
+              Contact
             </Link>
           </div>
         </nav>

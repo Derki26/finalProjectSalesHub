@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes , BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes  } from "react-router-dom";
 import "./App.css";
 import {Home} from "./Home";
 import {About} from "./About";
@@ -14,21 +14,16 @@ const App = () => {
   return (
     <>
      
-      <Home />
-      <Hero />
-      <Courses />
-      <Certificate />
-      <About />
-      <Footer />
+     <Home />
       <Routes>
-        <Route  path=' ' component={<Home />} />
-        <Route  path='Hero' component={<Hero />} />
-        <Route  path='courses' component={<Courses />} />
-        <Route  path='Certificate' component={<Certificate />} />
-        <Route  path='About' component={<About />} />
-        <Route  path='Contact' component={<Contact />} />
-        <Route  path='footer' component={<Footer />} />
+        <Route  path='courses' element={<Courses />} />
+        <Route  path='Certificate' element={<Certificate />} />
+        <Route  path='About' element={<About />} />
+        <Route  path='Contact' element={<Contact />} />
+        <Route  path='footer' element={<Footer />} />
       </Routes>
+     
+     
     </>
   );
 }
