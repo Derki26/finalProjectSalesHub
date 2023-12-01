@@ -68,8 +68,11 @@ const Home = () => {
       <div className="container-fluid mx-auto flex items-center justify-between">
      
       </div>
+     
     </div>
+    
   );
+
 };
 
 export { Home };
