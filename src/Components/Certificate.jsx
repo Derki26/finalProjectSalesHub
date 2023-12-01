@@ -33,7 +33,7 @@ const Certificate = () => {
               </h1>
               <div className="header-img">
               <img
-                src="picture3.JPG"
+                src="1651585.webp"
                 className="max-w-sm rounded-lg shadow-2xl"
               />
               </div>
