@@ -27,9 +27,9 @@ const Hero = () => {
 
           <div className="mb-3">
             <div className="text-center lg:text-left">
-              <h1 className="text-primary text-5xl font-bold">
-                Join the #1 pathway for high-growth tech careers!
-              </h1>
+              <div className="header-img">
+                 
+              </div>
               <div className="col-lg-6 order-1 order-lg-2 header-img">
                   <img
                     src="picture1.jpg"
@@ -60,11 +60,7 @@ const Hero = () => {
                     cutting-edge technologies and revising our curriculum to
                     reflect the most in-demand skills.
                   </p>
-                  <p className="text-gray-500 text-2xl leading-[2.5rem]">
-                    We have built our program around the most effective learning
-                    styles – pairing our curriculum with hands-on experiences to
-                    prepare learners to be tomorrow’s leaders in technology
-                  </p>
+                  
                   <div className="flex flex-col md:flex-row items-center gap-4">
                     <button className="w-full xl:w-auto bg-primary text-white py-2 px-8 rounded-xl text-xl">
                         Get Started
