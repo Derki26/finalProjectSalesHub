@@ -62,12 +62,11 @@ const Navbar = () => {
         className="container-fluid grid"
         style={{ boxShadow: "0 5px 8px rgba(0, 0, 0, 0.1)", padding: "1rem" }}
       >    
-        <Outlet />
       </div>
       <div className="container-fluid mx-auto flex items-center justify-between">
      
       </div>
-      
+     
     </div>
     
   );
