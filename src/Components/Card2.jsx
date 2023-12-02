@@ -18,7 +18,7 @@ import { NavLink } from "react-router-dom";
             A Java developer is a professional who specializes
             in programming using the Java programming language. 
             Java is a versatile and widely-used programming language
-            that is known for its portability.
+            that is known for its portability..
             </p>
             <NavLink to="" className="btn btn-primary">
               Go somewhere
