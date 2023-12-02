@@ -1,5 +1,6 @@
 import { Outlet, Link } from "react-router-dom";
 import "../CSS/header.css";
+import web from "./img/mylogo.png"
 
 
 
@@ -12,7 +13,7 @@ const Navbar = () => {
         <nav>
           <div className="header-nav2">
             <img
-              src="logo-salesforce.svg"
+              src={web}
               alt="logo"
               className="logo-nav"
               style={{ marginRight: "10px" }}
