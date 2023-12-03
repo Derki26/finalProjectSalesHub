@@ -8,6 +8,7 @@ import { Courses } from "./Components/Courses";
 import { Certificate } from "./Components/Certificate";
 import { Contact } from "./Components/Contact";
 
+
 const router = createBrowserRouter([
   {
 		path: "/",

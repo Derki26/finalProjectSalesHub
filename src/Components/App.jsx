@@ -14,12 +14,4 @@ const App = () => {
   );
 };
 
-// <Routes>
-//   <Route  path='/' element={<Home />} />
-//   <Route  path='Courses' element={<Courses />} />
-//   <Route  path='Certificate' element={<Certificate />} />
-//   <Route  path='About' element={<About />} />
-//   <Route  path='Contact' element={<Contact />} />
-// </Routes>
-
 export { App };

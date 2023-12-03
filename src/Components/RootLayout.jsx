@@ -1,21 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
 import "../CSS/header.css";
 import web from "./img/mylogo.png"
-import { About } from "./About";
-import { Courses } from "./Courses";
-import { Certificate } from "./Certificate";
-import { Contact } from "./Contact";
-import { Hero } from "./Hero";
 
 
-
-
-const Navbar = () => {
+const RootLayout = () => {
   return (
-    
     <div className="container-fluid mx-auto flex items-center justify-between">
       <div>
-        <nav>
+      <nav>
           <div className="header-nav2">
             <img
               src={web}
@@ -60,27 +52,29 @@ const Navbar = () => {
             >
               Contact
             </Link>
-            <Link
-              to="/loning"
-              className="btn btn-outline text-white" 
-              style={{ fontSize: "1.5rem" , borderRadius: "20px", background:"#00c3ff"}}
-            >
-              Log in
-            </Link>
           </div>
         </nav>
       </div>
       <div
         className="container-fluid grid"
         style={{ boxShadow: "0 5px 8px rgba(0, 0, 0, 0.1)", padding: "1rem" }}
-      >    
+      >
+       
       </div>
-     
-  
-    </div>
-    
+      
+      <div className="header-nav1" style={{backgroundImage: 'url(/test-bg.webp)'}}>
+       <div className="hero-overlay bg-opacity-60"></div>
+         <div className="hero-content text-center text-neutral-content">
+           <div className="max-w-md">
+               <h1 className="mb-5 text-5xl font-bold" style={{ fontFamily: "Avant Garde", color: "rgb(3, 45, 96)", fontSize: "48px", fontWeight: 600, height: "109.438px" }} >Blaze your trail with us at Salesforce.</h1>
+               <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                <button className="btn btn-primary">Get Started</button>
+             </div>
+          </div>
+          </div>
+       </div>
+          
   );
-
 };
 
-export { Navbar };
+export { RootLayout };
