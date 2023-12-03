@@ -1,17 +1,16 @@
-import React from "react";
-import { Outlet, Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar } from "./Navbar";
+import { Outlet } from "react-router-dom";
 import { Footer } from "./Footer";
+import { Navbar } from "./ui/Navbar";
 
 const App = () => {
-  return (
-    <>
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Navbar />
+			<Outlet />
+			<Footer />
+		</>
+	);
 };
 
 export { App };
