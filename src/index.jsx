@@ -2,11 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { App } from "./Components/App";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import { Home } from "./Components/Home";
-import { About } from "./Components/About";
-import { Courses } from "./Components/Courses";
+import { Home } from "./pages/Home";
+import { About } from "./pages/About";
+import { Courses } from "./pages/Courses";
 import { Certificate } from "./Components/Certificate";
 import { Contact } from "./Components/Contact";
+import "./index.css";
 
 
 const router = createBrowserRouter([
