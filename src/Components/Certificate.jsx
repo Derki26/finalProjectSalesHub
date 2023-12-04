@@ -2,47 +2,34 @@ import { Header } from "./ui/Header";
 
 export const Certificate = () => {
 	return (
-		<div
-			className="bg-cover bg-center"
-			style={{ backgroundImage: "url(/test-bg.webp)" }}>
-			<div className="hero-content text-center">
-				<div className="header-img">
-					<img
-						src="hombre-certificado.avif"
-						className="img-fluid animated"
-						alt="home"
-					/>
-				</div>
-				<div className="max-w-md" style={{ height: "100vh" }}>
-					<h1
-						className="text-primary xl:text-7xl xl:leading-[7.5rem] mb-5 font-bold"
-						style={{
-							fontFamily: "Avant Garde",
-							fontSize: "48px",
-							fontWeight: 600,
-							height: "109.438px",
-						}}>
-						Change your life in months, not years
-					</h1>
+		<div className="hero min-h-screen bg-white">
+		<div className="hero-content flex-col lg:flex-row-reverse">
+		  <img src="img/hombre-certificado.avif" className="max-w-sm rounded-lg shadow-2xl" />
+		  <div>
+			<h1 className="text-primary text-5xl font-bold">Change your life in months, not years!</h1>
+			<p className="py-6"             style={{
+              fontFamily: "Avant Garde",
+              fontWeight: 400,
+              height: "109.438px",
+            }}
+			>We are recognized by multiple institutions for our academic quality,
+			 affordability, and accessibility. Our commitment to excellence also helped us rank in the top 
+			 10% of Niche.com’s best online schools in America. Earning your online information technology 
+			 degree from a nonprofit university with this kind of recognition can help set you apart from 
+			 others in your field.
+			Tuition for all undergraduate, graduate, and doctoral programs has not increased in 9 years.
+			 While many other online colleges have raised tuition, Liberty has been able to keep costs 
+			 low as a nonprofit university.</p>
+			
+			 <Header
+				name="Grow your education with"
+				imgSrc="img/1651585.webp"
+				visit="/courses"
+				btnName="Get Started"
+			/>
 
-					<div className="mb-3">
-						<div className="text-center lg:text-left">
-							<div className="header-img">
-								<img
-									src="1651585.webp"
-									className="max-w-sm rounded-lg shadow-2xl"
-								/>
-							</div>
-							<Header
-								name="Join the #1 pathway for high-growth tech careers!"
-								imgSrc="img/ilustracion-colorida-programador.avif"
-								visit="/contact"
-								btnName="Contact Now"
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
+		  </div>
 		</div>
+	  </div>
 	);
 };

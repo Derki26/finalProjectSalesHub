@@ -1,8 +1,9 @@
 export const Footer = () => {
 	return (
 		<footer
-			className="footer footer-center p-10 text-primary-content"
-			style={{ borderRadius: "39px", background: "#00c3ff" }}>
+			className="footer footer-center p-1 text-primary-content"
+			style={{ borderRadius: "39px", background: "#00c3ff" ,  marginTop: "220px"}}>
+				
 			<aside>
 				<svg
 					width="50"

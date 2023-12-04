@@ -10,7 +10,7 @@ export const Header = ({ name, visit, btnName, imgSrc }) => {
 				<div className="pt-5 flex justify-center flex-col mx-auto w-fit order-2">
 					<h1>
 						{name}
-						<strong className="brand-name">LivDer</strong>
+						<strong className="text-blue-500 brand-name text-2xl font-bold">LivDer</strong>
 					</h1>
 					<h2 className="my-3">
 						We are a Company of Full Stack Web Developer.

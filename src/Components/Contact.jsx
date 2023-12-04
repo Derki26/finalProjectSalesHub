@@ -27,21 +27,20 @@ const Contact = () => {
   };
 
   return (
-    <>
-    <div className="container" style={{ height: "100vh" }}>
-    <div  >
-      <div className="my-5" >
-        <h1 className="text-center">Contact We</h1>
+    <div className="hero max-h-screen bg-white">
+    <div >
+      <div className="my-5 mt-20" >
+        <h1 className="text-center text-primary text-3xl font-bold">Contact We</h1>
       </div>
-      <div className="container contact_div">
-        <div className="row" >
-          <div className="col-md-6 col-10 mx-auto">
+      <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mt-10">
+        <div className="card-body" >
+          <div className="form-control">
             <form onSubmit={formSubmit}>
               <div className="form-group">
                 <label>Full Name</label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control input input-bordered"
                   id="exampleInputEmail1"
                   name="fullname"
                   value={data.fullname}
@@ -54,7 +53,7 @@ const Contact = () => {
                 <label>Phone Number</label>
                 <input
                   type="number"
-                  className="form-control"
+                  className="form-control input input-bordered"
                   id="exampleInputEmail1"
                   name="phone"
                   value={data.phone}
@@ -67,7 +66,7 @@ const Contact = () => {
                 <label>Email address</label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control input input-bordered"
                   id="exampleInputEmail1"
                   name="email"
                   value={data.email}
@@ -79,7 +78,7 @@ const Contact = () => {
               <div className="form-group">
                 <label>Message</label>
                 <textarea
-                  className="form-control"
+                  className="form-control input input-bordered"
                   name="message"
                   value={data.message}
                   onChange={inputEvent}
@@ -88,7 +87,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <div>
-              <button type="submit" className="btn btn-outline-primary">
+              <button type="submit" className="btn btn-outline-primary mt-10 ">
                 Submit
               </button>
               </div>
@@ -98,7 +97,8 @@ const Contact = () => {
       </div>
     </div>
     </div>
-    </>
+    
+    
   );
 }
 

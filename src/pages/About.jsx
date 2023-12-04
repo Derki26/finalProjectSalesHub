@@ -4,7 +4,7 @@ export const About = () => {
 	return (
 			<Header
 				name="Welcome to About page"
-				imgSrc="hombre-certificado.avif"
+				imgSrc="img/Choosing-a-Web-Developer.jpg"
 				visit="/contact"
 				btnName="Contact Now"
 			/>
