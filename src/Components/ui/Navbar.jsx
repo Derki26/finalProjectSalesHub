@@ -73,7 +73,7 @@ export const Navbar = () => {
 			</div>
 			<div className="navbar-end">
 				<Link
-					to="/loning"
+					to="/login"
 					className="btn btn-outline text-white"
 					style={{
 						fontSize: "1.5rem",

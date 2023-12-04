@@ -6,7 +6,7 @@ export const Certificate = () => {
 		<div className="hero-content flex-col lg:flex-row-reverse">
 		  <img src="img/hombre-certificado.avif" className="max-w-sm rounded-lg shadow-2xl" />
 		  <div>
-			<h1 className="text-primary text-5xl font-bold">Change your life in months, not years!</h1>
+			<h1 className="text-blue-500 text-5xl font-bold">Change your life in months, not years!</h1>
 			<p className="py-6"             style={{
               fontFamily: "Avant Garde",
               fontWeight: 400,
