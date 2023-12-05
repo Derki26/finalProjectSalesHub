@@ -7,13 +7,30 @@ import { About } from "./pages/About";
 import { Courses } from "./pages/Courses";
 import { Certificate } from "./Components/Certificate";
 import { Contact } from "./Components/Contact";
+import { PrivateApp } from "./Components/PrivateApp";
 import "./index.css";
+import {RequireAuth} from "./Components/lib/require-auth"
+import { AuthProvider } from "./Components/lib/context/auth-context";
 
+// const withAuthProvider = (Component, requireAuth = false,) => {
+// return (
+// 	<AuthProvider>
+// 	{requireAuth? (
+// 		<RequireAuth>
+// 		 <Component/>
+// 		</RequireAuth>
+// 	) : (
+// 		<Component/>
+// 	)}
+// 	</AuthProvider>
+// );
+// };
 
 const router = createBrowserRouter([
   {
 		path: "/",
-		element: <App />,
+		//element: <App />,
+		element: withAuthProvider (App,true,true),
 		children: [
 			{
 				path: "/",
@@ -35,8 +52,15 @@ const router = createBrowserRouter([
 				path: "/contact",
 				element: <Contact />,
 			},
+
+		
 		],
+		
 	},
+	// {
+	// 	path: "/private",
+	// 	element: <PrivateApp />,
+	// },
 
 ]);
 
