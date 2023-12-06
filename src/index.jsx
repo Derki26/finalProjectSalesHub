@@ -7,7 +7,7 @@ import { About } from "./pages/About";
 import { Courses } from "./pages/Courses";
 import { Certificate } from "./Components/Certificate";
 import { Contact } from "./Components/Contact";
-//import { PrivateApp } from "./Components/PrivateApp";
+import { PrivateApp } from "./Components/PrivateApp";
 import "./index.css";
 //import {RequireAuth} from "./Components/lib/require-auth"
 //import { AuthProvider } from "./Components/lib/context/auth-context";
@@ -57,10 +57,10 @@ const router = createBrowserRouter([
 		],
 		
 	},
-	// {
-	// 	path: "/private",
-	// 	element: <PrivateApp />,
-	// },
+	 {
+	 	path: "/private",
+	 	element: <PrivateApp />,
+	 },
 
 ]);
 
