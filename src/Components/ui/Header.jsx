@@ -10,10 +10,10 @@ export const Header = ({ name, visit, btnName, imgSrc }) => {
 				<div className="pt-5 flex justify-center flex-col mx-auto w-fit order-2">
 					<h1>
 						{name}
-						<strong className="text-blue-500 brand-name text-2xl font-bold">LivDer</strong>
+						<strong className="text-blue-500 brand-name text-2xl font-bold">SalesforceHub</strong>
 					</h1>
 					<h2 className="my-3">
-						We are a Company of Full Stack Web Developer.
+					Get Certified and Accelerate Your Salesforce Career!
 					</h2>
 					<div className="mt-3">
 						<Link className="btn" to={visit}>

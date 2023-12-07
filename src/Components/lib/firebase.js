@@ -3,9 +3,8 @@ import {
 	getAuth,
 	onAuthStateChanged,
 	signOut,
-	signInWithEmailAndPassword,
-	NextOrObserver,
-	User,
+	signInWithEmailAndPassword
+	
 } from "firebase/auth";
 
 const firebaseConfig = {

@@ -7,10 +7,11 @@ import { About } from "./pages/About";
 import { Courses } from "./pages/Courses";
 import { Certificate } from "./Components/Certificate";
 import { Contact } from "./Components/Contact";
-import { PrivateApp } from "./Components/PrivateApp";
+import { Login } from "./Components/Login";
+// { PrivateApp } from "./Components/PrivateApp";
 import "./index.css";
-import {RequireAuth} from "./Components/lib/require-auth"
-import { AuthProvider } from "./Components/lib/context/auth-context";
+//import {RequireAuth} from "./Components/lib/require-auth"
+//import { AuthProvider } from "./Components/lib/context/auth-context";
 
 // const withAuthProvider = (Component, requireAuth = false,) => {
 // return (
@@ -29,8 +30,8 @@ import { AuthProvider } from "./Components/lib/context/auth-context";
 const router = createBrowserRouter([
   {
 		path: "/",
-		//element: <App />,
-		element: withAuthProvider (App,true,true),
+		element: <App />,
+		//element: withAuthProvider (App,true,true),
 		children: [
 			{
 				path: "/",
@@ -57,10 +58,10 @@ const router = createBrowserRouter([
 		],
 		
 	},
-	// {
-	// 	path: "/private",
-	// 	element: <PrivateApp />,
-	// },
+	 {
+		path: "/Login",
+	 	element: <Login />,
+	},
 
 ]);
 

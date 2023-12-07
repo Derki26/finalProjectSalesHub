@@ -30,7 +30,7 @@ const Contact = () => {
     <div className="hero max-h-screen bg-white">
     <div >
       <div className="my-5 mt-20" >
-        <h1 className="text-center text-blue-500 text-3xl font-bold">Contact We</h1>
+        <h1 className="text-center text-blue-500 text-3xl font-bold">Contact us!</h1>
       </div>
       <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100 mt-10">
         <div className="card-body" >
