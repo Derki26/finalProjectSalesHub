@@ -11,6 +11,7 @@ import { PrivateApp } from "./Components/PrivateApp";
 import "./index.css";
 import RequireAuth from "./Components/lib/require-auth"
 import { AuthProvider } from "./Components/lib/context/auth-context";
+import { Login } from "./Components/Login";
 
 const withAuthProvider = (Component, requireAuth = false,) => {
 return (
@@ -48,12 +49,15 @@ const router = createBrowserRouter([
 				path: "/certificate",
 				element: <Certificate />,
 			},
-      {
+      		{
 				path: "/contact",
 				element: <Contact />,
 			},
 
-		
+			{
+				path: "/login",
+				element: <Login />,
+			},
 		],
 		
 	},
