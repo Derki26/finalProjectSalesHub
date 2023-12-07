@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Form, useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+//import { Form, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
@@ -9,21 +9,24 @@ const Login = () => {
     
   });
 
-  const {email, password} = formFields;
+  const { email, password } = formFields;
 
   
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-    setFormFields((prevVal) => {
+    setFormFields((prev) => {
       return {
-        ...prevVal,
+        ...prev,
         [name]: value
-      };
+      };  
     });
   };
 
-  
+  useEffect(() => {
+      console.log(formFields);
+
+  }, [formFields])
 
   return (
     <div className="hero min-h-screen bg-white bg-[url(Login_background.jpg)]">
@@ -38,13 +41,13 @@ const Login = () => {
           <label className="label">
             <span className="label-text">Email</span>
           </label>
-          <input type="email" placeholder="email" className="input input-bordered" required />
+          <input type="email" placeholder="email" name="email" className="input input-bordered" value={email}   onChange={handleChange} />
         </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
-          <input type="password" placeholder="password" className="input input-bordered" required />
+          <input type="password" placeholder="password" name="password"  className="input input-bordered" value={password} onChange={handleChange} />
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
