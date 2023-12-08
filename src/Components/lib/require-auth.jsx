@@ -5,7 +5,7 @@ import { Navigate, useLocation } from "react-router-dom";
 function RequireAuth({
 	children,
 	reload = false,
-	to = "auth/login",
+	to = "/login",
 }) {
 	const { currentUser } = useContext(AuthContext);
 	const location = useLocation();
@@ -17,7 +17,7 @@ function RequireAuth({
 	if (!currentUser && !reload) {
 		return (
 			<Navigate
-				to={`${to}/${location.pathname}`}
+				to={`${to}?redirect=${location.pathname}`}
 				state={{ from: location }}
 				replace
 			/>

@@ -24,8 +24,8 @@ export const Certificate = () => {
             Salesforce consulting partner. This prestigious designation, awarded
             to only the top 10% of partners globally, reflects our unwavering
             commitment to customer satisfaction and exceeding expectations.
+			<br></br>
           </p>
-
           <Header
             name="Grow your education with"
             imgSrc="img/1651585.webp"

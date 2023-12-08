@@ -10,7 +10,7 @@ export const Header = ({ name, visit, btnName, imgSrc }) => {
 				<div className="pt-5 flex justify-center flex-col mx-auto w-fit order-2">
 					<h1>
 						{name}
-						<strong className="text-blue-500 brand-name text-2xl font-bold">SalesforceHub</strong>
+						<strong className="text-blue-500 brand-name text-2xl font-bold"> SalesforceHub</strong>
 					</h1>
 					<h2 className="my-3">
 					Get Certified and Accelerate Your Salesforce Career!

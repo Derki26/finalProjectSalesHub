@@ -1,16 +1,21 @@
 import { useState } from "react";
+import { Form, useNavigate } from "react-router-dom";
 
 
 const Login = () => {
-  const [data, setData] = useState({
+  const [formFields, setFormFields] = useState({
     email: "",
     password: ""
     
   });
 
-  const inputEvent = (event) => {
+  const {email, password} = formFields;
+
+  
+
+  const handleChange = (event) => {
     const { name, value } = event.target;
-    setData((prevVal) => {
+    setFormFields((prevVal) => {
       return {
         ...prevVal,
         [name]: value
@@ -18,12 +23,7 @@ const Login = () => {
     });
   };
 
-  const formSubmit = (event) => {
-    event.preventDefault();
-    alert(
-      `My email id is ${data.email}.`
-    );
-  };
+  
 
   return (
     <div className="hero min-h-screen bg-white bg-[url(Login_background.jpg)]">

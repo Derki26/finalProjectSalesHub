@@ -54,7 +54,7 @@ export const Navbar = () => {
 						))}
 					</ul>
 				</div>
-				<Link to="/" className="btn btn-ghost text-xl">
+				<Link to="/" className="text-xl">
 					<img
 						src="img/myLogo.png"
 						alt="logo"
