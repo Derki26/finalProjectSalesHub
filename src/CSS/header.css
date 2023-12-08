@@ -1,107 +1,99 @@
-*{
+* {
   border: 1px dashed red;
 }
 
-.header{
-background-color:#FFFFFF;
-display: flex; 
-z-index: 50; 
-padding-top: 6rem;
-padding-bottom: 1rem; 
-padding-left: 2rem;
-padding-right: 2rem; 
-justify-content: space-between; 
-align-items: center; 
-width: 100%; 
-height: 5vh;
+.header {
+  background-color: #ffffff;
+  display: flex;
+  z-index: 50;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
 
-@media (min-width: 1280px) { 
-  justify-content: flex-start; 
- }
-
+  @media (min-width: 1280px) {
+    justify-content: flex-start;
+  }
 }
 
-.header-div{
+.header-div {
+  margin-top: -1rem;
+  text-align: center;
 
-margin-top: -1rem; 
-text-align: center; 
-
-
-@media (min-width: 1280px) { 
-  width: 16.666667%; 
- }
-
+  @media (min-width: 1280px) {
+    width: 16.666667%;
+  }
 }
 
-.header-a{
-background-color: rgb(112 111 229);
-position: relative; 
-padding: 0.25rem; 
-font-size: 1.5rem;
-line-height: 2rem; 
-font-weight: 700; 
-
+.header-a {
+  background-color: rgb(112 111 229);
+  position: relative;
+  padding: 0.25rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
 
-.header-span{
-font-size: 3rem;
-line-height: 1; 
+.header-span {
+  font-size: 3rem;
+  line-height: 1;
 }
 
-.header-span2{
-position: absolute; 
-bottom: -0.75rem; 
-left: -0.75rem; 
+.header-span2 {
+  position: absolute;
+  bottom: -0.75rem;
+  left: -0.75rem;
 }
 
-.header-nav1{
-    position: fixed; 
-    height: 100%; 
-    
-    width: 80%;
-    
-    @media (min-width: 768px) { 
-      width: 40%;
-     }
-    
-    @media (min-width: 1280px) { 
-      width: 100%; 
-     }
-      
-    }
-    
-    .header-nav2{
-        display: flex; 
-        top: 0; 
-        z-index: 50; 
-        flex-direction: column; 
-        flex: 1 1 0%; 
-        gap: 2.5rem; 
-        justify-content: left; 
-        align-items: center; 
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 300ms; 
-        transition-duration: 500ms; 
-    
-        @media (min-width: 1280px) { 
-          position: static; 
-        flex-direction: row; 
-         }
-        
-    }
+.header-nav1 {
+  position: fixed;
+  height: 100%;
 
-    .nav_link:hover {
-      color:  var(--white-color);
-    }
+  width: 80%;
 
+  @media (min-width: 768px) {
+    width: 40%;
+  }
 
-.nav_link
-{
+  @media (min-width: 1280px) {
+    width: 100%;
+  }
+}
+
+.header-nav2 {
+  display: flex;
+  top: 0;
+  z-index: 50;
+  flex-direction: column;
+  flex: 1 1 0%;
+  gap: 2.5rem;
+  justify-content: left;
+  align-items: center;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-duration: 500ms;
+
+  @media (min-width: 1280px) {
+    position: static;
+    flex-direction: row;
+  }
+}
+
+.nav_link:hover {
+  color: var(--white-color);
+}
+
+.nav_link {
   color: #a4a5a6;
   transition: 0.2s;
   font-size: 1.5rem;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .nav_item {
@@ -113,12 +105,11 @@ left: -0.75rem;
   display: flex;
   position: relative;
   right: 270px;
-
 }
 
-.logo-nav{
+.logo-nav {
   width: 150px;
-  height:150px;
+  height: 150px;
 }
 
 .containerX {
@@ -128,24 +119,24 @@ left: -0.75rem;
   margin-top: 40px;
 }
 
-.hero-heading-home{
-color :rgb(3, 45, 96);
-font-family: "Avant Garde", sans-serif;
-font-size: 48px;
-font-weight: 600;
-height:109.438px;
-letter-spacing: -0.864px;
-line-height :54.72px;
-margin-block-end: 24px;
-margin-block-start: 0px;
-margin-bottom: 24px;
-margin-inline-end: 0px;
-margin-inline-start: 0px;
-margin-top: 0px;
-width: 800px;
+.hero-heading-home {
+  color: rgb(3, 45, 96);
+  font-family: "Avant Garde", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  height: 109.438px;
+  letter-spacing: -0.864px;
+  line-height: 54.72px;
+  margin-block-end: 24px;
+  margin-block-start: 0px;
+  margin-bottom: 24px;
+  margin-inline-end: 0px;
+  margin-inline-start: 0px;
+  margin-top: 0px;
+  width: 800px;
 }
 
-.content{
+.content {
   background-size: 60%;
   background-position: right -80px top 0;
   background-repeat: no-repeat;
@@ -156,7 +147,7 @@ width: 800px;
 
 .hero {
   position: relative;
-  color: #032D60;
+  color: #032d60;
   background-color: #fff;
   overflow: hidden;
 }
@@ -164,9 +155,7 @@ width: 800px;
   padding: 10rem 0 5rem;
 }
 
-
-.hero-home
-.content .text-content{
+.hero-home .content .text-content {
   order: 0;
 }
 

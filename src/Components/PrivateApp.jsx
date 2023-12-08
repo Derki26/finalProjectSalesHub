@@ -4,13 +4,13 @@ import { Footer } from "./Footer";
 import { Navbar } from "./ui/Navbar";
 
 const PrivateApp = () => {
-	return (
-		<>
-			<Navbar />
-			<Outlet />
-			<Footer />
-		</>
-	);
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+      <Footer />
+    </>
+  );
 };
 
 export { PrivateApp };

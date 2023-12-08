@@ -10,6 +10,7 @@ import { Contact } from "./Components/Contact";
 import { Login } from "./Components/Login";
 // { PrivateApp } from "./Components/PrivateApp";
 import "./index.css";
+
 //import {RequireAuth} from "./Components/lib/require-auth"
 //import { AuthProvider } from "./Components/lib/context/auth-context";
 
@@ -29,44 +30,40 @@ import "./index.css";
 
 const router = createBrowserRouter([
   {
-		path: "/",
-		element: <App />,
-		//element: withAuthProvider (App,true,true),
-		children: [
-			{
-				path: "/",
-				element: <Home />,
-			},
-			{
-				path: "/about",
-				element: <About />,
-			},
+    path: "/",
+    element: <App />,
+    //element: withAuthProvider (App,true,true),
+    children: [
       {
-				path: "/courses",
-				element: <Courses />,
-			},
+        path: "/",
+        element: <Home />,
+      },
       {
-				path: "/certificate",
-				element: <Certificate />,
-			},
+        path: "/about",
+        element: <About />,
+      },
       {
-				path: "/contact",
-				element: <Contact />,
-			},
-
-		
-		],
-		
-	},
-	 {
-		path: "/Login",
-	 	element: <Login />,
-	},
-
+        path: "/courses",
+        element: <Courses />,
+      },
+      {
+        path: "/certificate",
+        element: <Certificate />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
+  },
+  {
+    path: "/Login",
+    element: <Login />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>
+  </React.StrictMode>,
 );
