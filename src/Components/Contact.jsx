@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
+import { AuthContext } from './lib/context/auth-context';
+import { useNavigate } from 'react-router-dom';
 // import "../CSS/contact.css";
 
 const Contact = () => {
@@ -8,6 +10,15 @@ const Contact = () => {
 		email: '',
 		message: '',
 	});
+
+	const navigate = useNavigate();
+	const {currentUser} = useContext(AuthContext)
+
+	useEffect(() => {
+	if (currentUser){
+		navigate("/")
+	}
+	}, [currentUser]);
 
 	const inputEvent = (event) => {
 		const { name, value } = event.target;
