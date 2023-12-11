@@ -22,6 +22,7 @@ const menuLinks = [
 		label: 'Contact',
 		to: '/contact',
 	},
+	
 ];
 
 export const Navbar = () => {

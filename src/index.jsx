@@ -8,8 +8,8 @@ import { Courses } from './pages/Courses';
 import { Certificate } from './Components/Certificate';
 import { Contact } from './Components/Contact';
 import { Login } from './Components/Login';
-// { PrivateApp } from "./Components/PrivateApp";
 import './index.css';
+
 
 import RequireAuth from "./Components/lib/require-auth.jsx"
 import { AuthProvider } from "./Components/lib/context/auth-context";
@@ -54,6 +54,7 @@ const router = createBrowserRouter([
 				path: '/contact',
 				element: <Contact />,
 			},
+			
 		],
 	},
 	{
