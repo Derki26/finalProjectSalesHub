@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 
+
 // pass in an object with imgSrc, title, description, cta properties
 export const Card = ({ course }) => {
 	return (
@@ -12,9 +13,17 @@ export const Card = ({ course }) => {
 					<h2 className="card-title">{course.title}</h2>
 					<p>{course.description}</p>
 					<div className="card-actions justify-end">
-						<button className="btn btn-primary">
-							{course.cta}
-						</button>
+
+					<div className="mt-3">
+						<a
+							className="btn btn-primary"
+							href={course.href}
+							target="_blank" // Abre el enlace en una nueva pestaña
+							rel="noopener noreferrer"
+						>
+						{course.cta}
+					</a>
+            </div>
 					</div>
 				</div>
 			</div>

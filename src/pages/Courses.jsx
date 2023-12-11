@@ -1,6 +1,7 @@
 import { courses } from '../utils/data';
 import { Card } from '../Components/ui/Card';
 
+
 export const Courses = () => {
 	return (
 		<>
