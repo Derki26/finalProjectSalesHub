@@ -1,4 +1,7 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../lib/context/auth-context';
+import { SignOutUser } from '../lib/firebase';
 // import "../CSS/header.css";
 
 const menuLinks = [
@@ -18,11 +21,10 @@ const menuLinks = [
 		label: 'Certificate',
 		to: '/certificate',
 	},
-	
-	
 ];
 
 export const Navbar = () => {
+	const { currentUser } = useContext(AuthContext);
 	return (
 		<div className="container mx-auto navbar bg-base-100">
 			<div className="navbar-start">
@@ -72,17 +74,26 @@ export const Navbar = () => {
 				</ul>
 			</div>
 			<div className="navbar-end">
-				<Link
-					to="/login"
-					className="btn btn-outline text-white"
-					style={{
-						fontSize: '1.5rem',
-						borderRadius: '20px',
-						background: '#00c3ff',
-					}}
-				>
-					Log in
-				</Link>
+				{currentUser ? (
+					<button
+						className="btn btn-ghost btn-sm rounded-btn"
+						onClick={SignOutUser}
+					>
+						Sign Out
+					</button>
+				) : (
+					<Link
+						to="/login"
+						className="btn btn-outline text-white"
+						style={{
+							fontSize: '1.5rem',
+							borderRadius: '20px',
+							background: '#00c3ff',
+						}}
+					>
+						Log in
+					</Link>
+				)}
 			</div>
 		</div>
 	);
