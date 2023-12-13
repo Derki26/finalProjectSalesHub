@@ -18,10 +18,7 @@ const menuLinks = [
 		label: 'Certificate',
 		to: '/certificate',
 	},
-	{
-		label: 'Contact',
-		to: '/contact',
-	},
+	
 	
 ];
 

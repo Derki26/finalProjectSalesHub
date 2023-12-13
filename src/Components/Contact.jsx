@@ -16,7 +16,7 @@ const Contact = () => {
 
 	useEffect(() => {
 	if (currentUser){
-		navigate("/")
+		navigate("/contact")
 	}
 	}, [currentUser]);
 

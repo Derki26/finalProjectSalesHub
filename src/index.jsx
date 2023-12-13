@@ -33,7 +33,7 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		//element: <App />,
-		element: withAuthProvider (App,true),
+		element: withAuthProvider (App),
 		children: [
 			{
 				path: '/',
@@ -63,7 +63,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/Login',
-		element: withAuthProvider(Login,true)
+		element: withAuthProvider(Login)
 	},
 ]);
 
