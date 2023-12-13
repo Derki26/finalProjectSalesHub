@@ -11,29 +11,28 @@ import { Login } from './Components/Login';
 import { Information } from './Components/Information';
 import './index.css';
 
+import RequireAuth from './Components/lib/require-auth.jsx';
+import { AuthProvider } from './Components/lib/context/auth-context';
 
-import RequireAuth from "./Components/lib/require-auth.jsx"
-import { AuthProvider } from "./Components/lib/context/auth-context";
-
-const withAuthProvider = (Component, requireAuth = false,) => {
-return (
-	<AuthProvider>
-	{requireAuth? (
-		<RequireAuth>
-		 <Component/>
-		</RequireAuth>
-	) : (
-		<Component/>
-	)}
-	</AuthProvider>
-);
+const withAuthProvider = (Component, requireAuth = false) => {
+	return (
+		<AuthProvider>
+			{requireAuth ? (
+				<RequireAuth>
+					<Component />
+				</RequireAuth>
+			) : (
+				<Component />
+			)}
+		</AuthProvider>
+	);
 };
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		//element: <App />,
-		element: withAuthProvider (App),
+		element: withAuthProvider(App),
 		children: [
 			{
 				path: '/',
@@ -63,7 +62,7 @@ const router = createBrowserRouter([
 	},
 	{
 		path: '/Login',
-		element: withAuthProvider(Login)
+		element: withAuthProvider(Login),
 	},
 ]);
 
