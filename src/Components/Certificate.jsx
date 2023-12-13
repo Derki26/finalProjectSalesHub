@@ -30,7 +30,7 @@ export const Certificate = () => {
 					<Header
 						name="Grow your education with"
 						imgSrc="img/1651585.webp"
-						visit="/courses"
+						visit="/information"
 						btnName="Get Started"
 					/>
 				</div>

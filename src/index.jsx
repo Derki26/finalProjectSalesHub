@@ -8,6 +8,7 @@ import { Courses } from './pages/Courses';
 import { Certificate } from './Components/Certificate';
 import { Contact } from './Components/Contact';
 import { Login } from './Components/Login';
+import { Information } from './Components/Information';
 import './index.css';
 
 
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
 	{
 		path: '/',
 		//element: <App />,
-		element: withAuthProvider (App,false),
+		element: withAuthProvider (App,true),
 		children: [
 			{
 				path: '/',
@@ -54,12 +55,15 @@ const router = createBrowserRouter([
 				path: '/contact',
 				element: <Contact />,
 			},
-			
+			{
+				path: '/information',
+				element: <Information />,
+			},
 		],
 	},
 	{
 		path: '/Login',
-		element: withAuthProvider(Login,false)
+		element: withAuthProvider(Login,true)
 	},
 ]);
 

@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext } from './lib/context/auth-context';
 import { useNavigate } from 'react-router-dom';
- //import "../CSS/contact.css";
+//import "../CSS/contact.css";
 
 const Contact = () => {
 	const [data, setData] = useState({
