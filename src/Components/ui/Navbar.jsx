@@ -9,10 +9,7 @@ const menuLinks = [
 		label: 'Home',
 		to: '/',
 	},
-	{
-		label: 'About',
-		to: '/about',
-	},
+	
 	{
 		label: 'Courses',
 		to: '/courses',

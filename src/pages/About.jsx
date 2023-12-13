@@ -4,7 +4,7 @@ export const About = () => {
 	return (
 	<div className="hero min-h-screen bg-white">
 		<div className="hero-content flex-col lg:flex-row-reverse">
-			<p className="py-6">
+			<p className="flex w-full">
 			        Salesforcehub is a convined effort of Salesoforce with it's
 					partners in order to create a more userfriendly and
 					effective environment people like you to learn the required
@@ -51,7 +51,7 @@ export const About = () => {
 					<br></br>
 			</p>
 				<Header 
-					name="Get to know us better"
+					name=""
 					imgSrc="petSalesforce.png"
 					visit="/contact"
 					btnName="Contact Now"

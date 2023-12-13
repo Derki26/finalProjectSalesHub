@@ -33,6 +33,7 @@ export const Certificate = () => {
 						visit="/information"
 						btnName="Get Started"
 					/>
+					
 				</div>
 			</div>
 		</div>

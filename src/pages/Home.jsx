@@ -1,7 +1,7 @@
-import { Certificate } from '../Components/Certificate';
-import { Information } from '../Components/Information';
+
 import { Header } from '../Components/ui/Header';
 import { About } from './About';
+import { Follower } from './Follower';
 import { Team } from './Team';
 
 
@@ -23,11 +23,10 @@ const Home = () => {
 			</div>
 			<div className="flex flex-col w-full border-opacity-50">
 			<div className="grid h-20 card  rounded-box place-items-center"></div>
-			
 			</div>
-			
-			<About/>
 			<Team/>
+			<About/>
+			<Follower />
 		</>
 		
 	);
