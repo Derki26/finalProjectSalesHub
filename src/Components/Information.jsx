@@ -60,10 +60,11 @@ useEffect(() => {
       <div>
         {todos.map((item) => {
           return (
+           
             <div key={item.id}>
             <div className="hero max-h-screen bg-white">
                 <div className="hero-content text-left">
-                  <div className="max-w-mx">
+                  <div className="flex flex-col w-full border-opacity-50">
                     <h1 className="text-5xl font-bold">{item.tittle}</h1>
                     <span className="todo-item-text">{item.text}</span>
                   </div>
