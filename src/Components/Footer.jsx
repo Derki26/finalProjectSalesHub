@@ -10,7 +10,7 @@ export const Footer = () => {
 		>
 			<aside>
 				<p className="font-bold">
-					LivDer Industries Ltd. <br />
+					SaleforceHub <br />
 					Providing reliable tech since 2023
 				</p>
 				<p>Copyright © 2023 - All right reserved</p>
