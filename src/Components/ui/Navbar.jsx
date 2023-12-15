@@ -15,8 +15,8 @@ const menuLinks = [
 		to: '/courses',
 	},
 	{
-		label: 'Certificate',
-		to: '/certificate',
+		label: 'Community',
+		to: '/information',
 	},
 ];
 

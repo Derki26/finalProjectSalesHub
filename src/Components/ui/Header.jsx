@@ -16,7 +16,7 @@ export const Header = ({ name, visit, btnName, imgSrc }) => {
 					   We are a company focused on providing you with the correct support and guidance for you to boost your career in Salesforce.
 					</h2> */}
 					<div className="mt-3">
-						<Link className="btn" to={visit}>
+						<Link className="btn btn-primary" to={visit}>
 							{btnName}
 						</Link>
 					</div>

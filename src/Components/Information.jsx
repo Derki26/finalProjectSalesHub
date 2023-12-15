@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { db } from "./lib/firebase";
 import { collection, getDocs } from "firebase/firestore";
 
+import { Header } from '../Components/ui/Header';
+
 
 export const Information = () => {
 
@@ -63,9 +65,9 @@ useEffect(() => {
            
             <div key={item.id}>
             <div className="hero max-h-screen bg-white">
-                <div className="hero-content text-left">
+                <div className="hero-content md:flex items-center">
                   <div className="flex flex-col w-full border-opacity-50">
-                    <h1 className="text-5xl font-bold">{item.tittle}</h1>
+                    <h1 className="text-5xl font-bold mb-4">{item.tittle}</h1>
                     <span className="todo-item-text">{item.text}</span>
                   </div>
                 </div>
@@ -73,7 +75,13 @@ useEffect(() => {
           </div>
           );
         })}
+        <div className="hero-content md:flex items-center">
+        <a href="https://trailhead.salesforce.com/es/trailblazer-community/feed?tab=following" className="btn btn-primary md:flex">
+          Join now
+        </a>
       </div>
+      </div>
+      
     
   );
 }
