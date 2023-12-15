@@ -53,8 +53,8 @@ export const About = () => {
 				<Header 
 					name=""
 					imgSrc="petSalesforce.png"
-					visit="/contact"
-					btnName="Contact Now"
+					visit="/information"
+					btnName="Community"
 				/>
 	        </div>	 			
 	</div>	
